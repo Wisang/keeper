@@ -14,7 +14,29 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+function Header() {
+    return <header><h1>Keeper</h1></header>;
+}
+
+function Note() {
+    return <div className="note">
+        <h1>This is a note title.</h1>
+        <p>This is a note content.</p>
+    </div>;
+}
+
+function Footer() {
+    const date = new Date();
+    const thisYear = date.getFullYear();
+
+    return <footer>
+        <p>copyright {thisYear}</p>
+    </footer>;
+}
+
 ReactDOM.render(
-    <header><h1>Keeper</h1></header>,
+    <div>
+        <Header /><Note /><Footer />
+    </div>,
     document.getElementById("root")
 );
