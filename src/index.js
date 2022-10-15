@@ -15,6 +15,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 ReactDOM.render(
-    <h1>React from vs code and copilot</h1>,
+    <header><h1>Keeper</h1></header>,
     document.getElementById("root")
 );
